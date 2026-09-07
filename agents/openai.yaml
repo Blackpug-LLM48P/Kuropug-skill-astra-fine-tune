@@ -1,0 +1,4 @@
+interface:
+  display_name: "Kuro Pug Astra Orchestrator"
+  short_description: "Astra向け黒パグ制作・検証司令塔"
+  default_prompt: "Use $kuro-pug-astra-orchestrator to coordinate this Kuro Pug publishing task and verify every completion condition end to end."
