@@ -1,4 +1,4 @@
 interface:
   display_name: "Kuro Pug Astra Orchestrator"
-  short_description: "記事・画像制作の配分、予算、検証と復旧を管理するAstra向け司令塔"
-  default_prompt: "Use $kuro-pug-astra-orchestrator to coordinate this Kuro Pug publishing task and verify every completion condition end to end."
+  short_description: "資料の根拠を実務へつなぎ、複雑な作業の配分・予算・検証を管理する"
+  default_prompt: "Use $kuro-pug-astra-orchestrator to turn these sources into an evidence-linked practical brief and coordinate further work only when requested."

@@ -1,12 +1,12 @@
 # Basis and limits
 
-This variant started from the installed kuro-pug-tool skill and its prompt-patterns, QA and note-recovery references, not a verified upstream Git snapshot. The first revision summarized the entrypoint; it was not a verbatim full copy. The follow-up restores omitted production constraints while introducing adaptive coordination. The original installed skill is not modified.
+This community adaptation is now based on https://github.com/Blackpug-LLM48P/sample-kuropug-skill at `bd7f343521a68f95f88f69b8a1b5614973f58be0` (MIT, Copyright (c) 2026 Blackpug-LLM48P).
 
-The release-candidate revision removes the inherited note-recovery procedure and its runtime routing at the user's request. The experiment informs general difficult-task decisions, not platform-specific operating instructions. Historical evaluation descriptions remain records, not instructions.
+The source-to-action workflow, evidence separation, output-budget guard and completion definition are retained in SKILL.md. Its name/title are adapted and a conditional orchestration section is added. The two source references, validator, three unit tests and their fixtures are imported without substantive changes. README is adapted for this package rather than copying upstream installation examples.
 
-Release status: experimental candidate, not production-certified. The user selected MIT on 2026-09-07; LICENSE preserves Copyright (c) 2026 Blackpug-LLM48P. Do not describe this package as an official OpenAI skill or a verified full upstream import.
+The earlier image-production base was a source-selection mistake. Its image instructions and references are removed; note-specific recovery remains excluded. Previous evaluation reports are historical records of that earlier base, not proof of this rebased entrypoint. Generic orchestration and worker-contract instructions are retained; they govern execution only when needed and authorized. No upstream source repository is modified.
 
-The user identified https://github.com/Blackpug-LLM48P/sample-kuropug-skill as the intended source. Its main revision inspected on 2026-09-07 is `bd7f343521a68f95f88f69b8a1b5614973f58be0`; its LICENSE is MIT. Its SKILL.md defines `source-to-action-brief`, a source-analysis workflow, not the installed image-production `kuro-pug-tool` used above. This mismatch remains unresolved: the current package has not been rebased onto that source, and its scripts/tests/references have not been imported or claimed as verified. License selection does not resolve functional provenance.
+Release status: MIT experimental release candidate, not production-certified. See ../evals/rebase-validation.md for current checks. Prior authorizations and test evidence do not expand this skill's task scope.
 
 Primary reference: OpenAI, GPT-6 Astra System Card, 2026-09-03:
 https://deploymentsafety.openai.com/gpt-6-astra/gpt-6-astra.pdf

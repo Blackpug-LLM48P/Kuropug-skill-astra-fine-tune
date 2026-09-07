@@ -1,5 +1,7 @@
 # Release-candidate checks — 2026-09-07
 
+Historical pre-rebase report. Source mismatch below was resolved by the subsequent rebase; see `rebase-validation.md` for the current package. Preserve these observations as history, not current release blockers or proof of the new entrypoint.
+
 Status: experimental candidate. No production reliability or model-specific improvement claim. MIT was subsequently selected by the owner; the identified upstream skill differs from the base actually used (see references/design-basis.md). This evaluation does not certify security or legal clearance.
 
 ## Improvement loop
