@@ -1,6 +1,6 @@
 # Release-candidate checks — 2026-09-07
 
-Status: experimental candidate. No production reliability or model-specific improvement claim. Upstream provenance and redistribution terms still require owner confirmation. This evaluation does not certify security or legal clearance.
+Status: experimental candidate. No production reliability or model-specific improvement claim. MIT was subsequently selected by the owner; the identified upstream skill differs from the base actually used (see references/design-basis.md). This evaluation does not certify security or legal clearance.
 
 ## Improvement loop
 
@@ -44,4 +44,4 @@ This is a real persisted SQLite edit with deterministic injected contention, not
 - Syntax validator and whitespace checks passed; reviewed tracked text had no matches for preview access keys or the tested common token patterns. This is not an exhaustive secret scan or history audit.
 - Platform-specific live operation is excluded by user scope, not a failing release test.
 - Real worker cancellation, distributed concurrent writers, runtime budget integration, repeated statistical runs, independent model identification and baseline comparison remain untested.
-- Keep the experimental label. Obtain the upstream repository/revision and owner-selected reuse terms before presenting this as a generally redistributable release. Do not add a license by inference.
+- Keep the experimental label. The owner selected MIT and identified an upstream repository/revision, but its source-analysis purpose differs from this image-production base. Resolve that mismatch before claiming completion of the requested adaptation. These test results apply only to the implementation tested here.

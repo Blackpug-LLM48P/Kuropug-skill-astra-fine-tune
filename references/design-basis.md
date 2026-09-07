@@ -4,7 +4,9 @@ This variant started from the installed kuro-pug-tool skill and its prompt-patte
 
 The release-candidate revision removes the inherited note-recovery procedure and its runtime routing at the user's request. The experiment informs general difficult-task decisions, not platform-specific operating instructions. Historical evaluation descriptions remain records, not instructions.
 
-Release status: experimental candidate, not production-certified. Upstream Git provenance and redistribution terms remain unresolved; no license has been selected on the user's behalf. The public repository's visibility does not establish those terms. Do not describe this package as an official OpenAI skill or a verified full upstream import.
+Release status: experimental candidate, not production-certified. The user selected MIT on 2026-09-07; LICENSE preserves Copyright (c) 2026 Blackpug-LLM48P. Do not describe this package as an official OpenAI skill or a verified full upstream import.
+
+The user identified https://github.com/Blackpug-LLM48P/sample-kuropug-skill as the intended source. Its main revision inspected on 2026-09-07 is `bd7f343521a68f95f88f69b8a1b5614973f58be0`; its LICENSE is MIT. Its SKILL.md defines `source-to-action-brief`, a source-analysis workflow, not the installed image-production `kuro-pug-tool` used above. This mismatch remains unresolved: the current package has not been rebased onto that source, and its scripts/tests/references have not been imported or claimed as verified. License selection does not resolve functional provenance.
 
 Primary reference: OpenAI, GPT-6 Astra System Card, 2026-09-03:
 https://deploymentsafety.openai.com/gpt-6-astra/gpt-6-astra.pdf
