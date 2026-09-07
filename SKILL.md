@@ -7,7 +7,7 @@ description: Coordinate Kuro Pug article and image publishing with evidence-base
 
 Run the existing Kuro Pug image-production workflow as an end-to-end operation. Preserve character identity, article intent, evidence, and publishing state while coordinating generation, editing, browser actions, QA, and recovery.
 
-Read `references/astra-orchestration.md` before coordinating more than one substantive stage or worker. For image work, also read `references/prompt-patterns.md` and `references/qa-checklist.md`. For note draft placement, tags, saving, or editor recovery, read `references/note-publishing-recovery.md`.
+Read `references/astra-orchestration.md` before coordinating more than one substantive stage or worker, or recovering a blocked task. For image work, also read `references/prompt-patterns.md` and `references/qa-checklist.md`. Platform-specific operating procedures are outside this skill; use the target environment's available, authorized integration instructions.
 
 ## Workflow
 
@@ -17,7 +17,7 @@ Read `references/astra-orchestration.md` before coordinating more than one subst
 4. Separate locked anchors from per-image variables. Keep locked anchors verbatim across a sequence.
 5. Choose the smallest capable execution path. Observe progress and choose continue, switch, rescope with permission, hand off, or stop using the orchestration protocol. Parallelize only independent, authorized work with separate ownership and a shared budget.
 6. Inspect generated or edited images using `references/qa-checklist.md`. Repair material failures before placement.
-7. When editing note, use `references/note-publishing-recovery.md`. Treat upload, placement, save, synchronization, tags, and publication as different states.
+7. Distinguish attempted actions, durable results, and verified acceptance. Do not infer one from another.
 8. Reconcile the final artifact against the original completion conditions. Report unresolved items explicitly.
 
 ## Image Manifest
@@ -58,6 +58,6 @@ Lead with completed assets or the final prompt set. For a sequence, map image ID
 - Change only required scene variables. Prefer separate deliverable assets over crowded sheets; distinguish recurring characters by silhouette and palette.
 - Preserve exact Japanese punctuation. A prompt does not guarantee text accuracy; inspect outputs and use OCR or post-editing when necessary.
 - Do not imitate third-party characters, UI, artists, or examples more closely than authorized and permitted by the host. Extract generic visual characteristics instead.
-- Read surrounding article text before repairs. Use the current browser skill for live UI actions; legacy DOM examples do not override its permitted interfaces.
+- Read surrounding article text before repairs. Use current host instructions for live UI actions; if the required capability is unavailable, report the limitation and hand off.
 
 For source provenance and validation limits, see `references/design-basis.md`; it is background, not a mandatory reread on every task. This is instruction customization, not model-weight fine-tuning or an enforcement runtime.

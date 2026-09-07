@@ -2,6 +2,10 @@
 
 This variant started from the installed kuro-pug-tool skill and its prompt-patterns, QA and note-recovery references, not a verified upstream Git snapshot. The first revision summarized the entrypoint; it was not a verbatim full copy. The follow-up restores omitted production constraints while introducing adaptive coordination. The original installed skill is not modified.
 
+The release-candidate revision removes the inherited note-recovery procedure and its runtime routing at the user's request. The experiment informs general difficult-task decisions, not platform-specific operating instructions. Historical evaluation descriptions remain records, not instructions.
+
+Release status: experimental candidate, not production-certified. Upstream Git provenance and redistribution terms remain unresolved; no license has been selected on the user's behalf. The public repository's visibility does not establish those terms. Do not describe this package as an official OpenAI skill or a verified full upstream import.
+
 Primary reference: OpenAI, GPT-6 Astra System Card, 2026-09-03:
 https://deploymentsafety.openai.com/gpt-6-astra/gpt-6-astra.pdf
 
@@ -15,3 +19,5 @@ These are design motivations, not proof that this skill prevents the evaluated b
 The supplied OpenAI skill-creator instructions and openai.yaml specification inform progressive disclosure, proportional testing, user-scope preservation and separate forward-testing. A syntax validator does not measure orchestration quality.
 
 The adaptive allocation, worker contract, shared budget and evidence-revision rules are local engineering choices derived from the publishing experiment. They require behavioral validation. No model weights, permissions, runtime controls or automatic installation are changed by these Markdown files.
+
+For reproducible release checks and measured limits, see `../evals/release-candidate.md`. Evaluation fixtures are disposable test tooling, not runtime enforcement provided by the skill.

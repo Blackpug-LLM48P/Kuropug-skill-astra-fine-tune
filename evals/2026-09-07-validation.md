@@ -34,4 +34,4 @@ Result: expected decisions observed in one tabletop trajectory. No API was actua
 
 Official quick_validate: passed. UI length 25–64 constraint: passed. Six routed references exist. Git whitespace check: passed. These checks do not establish behavioral reliability.
 
-Primary design source is linked in references/design-basis.md. Source evaluation results are not evidence of this skill's effectiveness. Follow-up tests should exercise real isolated conditional-write conflicts and budget enforcement before claiming production readiness. A live note trial requires an explicitly selected disposable draft and authorization.
+Primary design source is linked in references/design-basis.md. Source evaluation results are not evidence of this skill's effectiveness. Follow-up tests should exercise real isolated conditional-write conflicts and budget enforcement before claiming production readiness. Platform-specific live tests are not release requirements; the user's experiment concerns general orchestration of difficult tasks.

@@ -4,18 +4,13 @@ Use this protocol when Astra coordinates multiple stages, tools, workers, tabs, 
 
 ## Define completion first
 
-Before execution, write a compact acceptance ledger. Each requirement must be independently observable. Example fields for a note workflow:
+Before execution, write a compact acceptance ledger. Each requirement must be independently observable. Example fields for a multi-stage artifact task:
 
 | Requirement | Required state | Evidence | Current state |
 |---|---|---|---|
-| Article body | Correct text, headings, no duplication | Read-back/count/diff | Not started |
-| Inline images | Correct asset at each intended location | Element plus surrounding paragraphs | Not started |
-| Captions | Correct and non-misleading | Read-back and visual inspection | Not started |
-| Header image | Set in the header field | Draft/card preview | Not started |
-| Tags | Saved as note tags, not body text | Tag UI read-back | Not started |
-| Draft save | Persisted | Reloaded editor/read-only draft | Not started |
-| User visibility | Visible in the user's required environment | User-side or independent environment check | Not started |
-| Publication | Published only when explicitly authorized | Public URL | Out of scope unless authorized |
+| Content | Requested change; unrelated content preserved | Baseline/result diff | Not started |
+| Durable result | Correct target and revision | Fresh read-back | Not started |
+| Delivery | Available through requested channel | Authorized recipient view or receipt as appropriate | Not started |
 
 Preserve the ledger through replanning. Include only requested requirements and necessary preservation invariants, not every example above. Record user-authorized changes as a new plan revision; mark removed items withdrawn or out_of_scope with the reason rather than retaining obsolete requirements. Discovered risks do not authorize new deliverables.
 
@@ -54,13 +49,13 @@ Treat every delegated result as a claim requiring reconciliation. Require the wo
 - remaining uncertainty;
 - side effects or changed identifiers.
 
-The orchestrator owns cross-stage consistency. It must compare identifiers, counts, markers, filenames, headings, tags, and authorization boundaries before accepting a stage.
+The orchestrator owns cross-stage consistency. Compare applicable identifiers, revisions, preservation constraints, and authorization boundaries before accepting a stage.
 
 ## Replanning and stopping
 
-- Stop on unexpected duplication, destructive scope ambiguity, save conflict, account ambiguity, or evidence that the wrong artifact is being edited.
+- Stop affected mutations on unexpected duplication, destructive scope ambiguity, save conflict, account ambiguity, or evidence that the wrong artifact is being edited. Independent safe work may continue within its existing scope and budget.
 - Do not repeat a failed mutation until the failure mode is distinguished.
-- Prefer a bounded recovery that preserves the current artifact. Create a replacement draft only when the user chooses that route.
+- Prefer a bounded recovery that preserves the current artifact. Replace the user's target only when the user chooses that route.
 - After replanning, restate which ledger items remain open.
 - Publishing, deletion, external messaging, and other consequential mutations require their own authorization; approval for editing does not imply them.
 
