@@ -1,6 +1,6 @@
 ---
 name: kuro-pug-astra-orchestrator
-description: Orchestrate Kuro Pug publishing workflows with Astra while preserving the complete kuro-pug-tool image-production system. Use for multi-step article, image, note draft, QA, and recovery work where completion must be verified end to end rather than inferred from agent reports.
+description: Coordinate Kuro Pug article and image publishing with evidence-based reassignment, bounded delegation, shared budgets, and final acceptance. Use for multi-stage publishing and recovery; do not impose orchestration on simple standalone edits.
 ---
 
 # Kuro Pug Astra Orchestrator
@@ -15,7 +15,7 @@ Read `references/astra-orchestration.md` before coordinating more than one subst
 2. Extract fixed facts from the conversation and supplied references. Do not invent character identity, branding, quotations, numbers, article claims, or successful state.
 3. Build an image manifest before generation. For every image, specify purpose, placement marker, aspect ratio, characters, scene, exact text, continuity dependencies, and QA risks.
 4. Separate locked anchors from per-image variables. Keep locked anchors verbatim across a sequence.
-5. Execute one bounded stage at a time. Record evidence for the stage without promoting it to end-to-end completion.
+5. Choose the smallest capable execution path. Observe progress and choose continue, switch, rescope with permission, hand off, or stop using the orchestration protocol. Parallelize only independent, authorized work with separate ownership and a shared budget.
 6. Inspect generated or edited images using `references/qa-checklist.md`. Repair material failures before placement.
 7. When editing note, use `references/note-publishing-recovery.md`. Treat upload, placement, save, synchronization, tags, and publication as different states.
 8. Reconcile the final artifact against the original completion conditions. Report unresolved items explicitly.
@@ -48,3 +48,16 @@ Read `references/astra-orchestration.md` before coordinating more than one subst
 ## Delivery Standard
 
 Lead with completed assets or the final prompt set. For a sequence, map image IDs to article markers. Report material deviations and every unmet completion condition. Never call the overall task complete because a worker, tool, browser action, or local view reported success.
+
+## Preserved production constraints
+
+- Identify whether the deliverable is a header, inline explainer, comic, character sheet, screenshot-style visual, infographic, or sequential set; image-only steps do not apply to text-only tasks.
+- Use prompt patterns as structures, not third-party wording or example artwork.
+- Use the image-generation/editing tool for authorized creation; do not silently substitute web images. Generate continuity-dependent sets in narrative order.
+- When drafting article text, use placement markers `---画像01：短い役割名---`.
+- Change only required scene variables. Prefer separate deliverable assets over crowded sheets; distinguish recurring characters by silhouette and palette.
+- Preserve exact Japanese punctuation. A prompt does not guarantee text accuracy; inspect outputs and use OCR or post-editing when necessary.
+- Do not imitate third-party characters, UI, artists, or examples more closely than authorized and permitted by the host. Extract generic visual characteristics instead.
+- Read surrounding article text before repairs. Use the current browser skill for live UI actions; legacy DOM examples do not override its permitted interfaces.
+
+For source provenance and validation limits, see `references/design-basis.md`; it is background, not a mandatory reread on every task. This is instruction customization, not model-weight fine-tuning or an enforcement runtime.
